@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Roboto:wght@300;400&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ <div class="main" >
+ 
+  <div class="screen"></div>
+<p class="exp">-</p> 
+<h3 class="output" id="show" placeholder="0"></h3>
+
+  <div class="btn">
+  <button class="button"  onclick="makeexp(1)">1</button>
+  <button class="button" onclick="makeexp(2)">2</button>
+  <button class="button" onclick="makeexp(3)">3</button>
+  <button class="button"id="sym" onclick="makeexp('/')">/</button>
+  <button class="button"id="sym" onclick="makeexp('+')">+</button>
+</div>
+<div class="btn">
+  <button class="button" onclick="makeexp(4)">4</button>
+  <button class="button" onclick="makeexp(5)">5</button>
+  <button class="button" onclick="makeexp(6)">6</button>
+  <button class="button" id="sym" onclick="calculatesqroot('%')">%</button>
+  <button class="button"id="sym" onclick="makeexp('-')">-</button>
+</div>
+<div class="btn">
+  <button class="button" onclick="makeexp(7)">7</button>
+  <button class="button" onclick="makeexp(8)">8</button>
+  <button class="button" onclick="makeexp(9)">9</button>
+  <button class="button" onclick="makeexp('.')">.</button>
+  <button class="button"id="sym" onclick="makeexp('/')">/</button>
+</div>
+<div class="btn">
+  <button class="button" id="equal"  onclick="calculate('=')">=</button>
+  <button class="button" id="sym" onclick="clearAll(1)">AC</button>
+  <button class="button"  onclick="makeexp(0)">0</button>
+ 
+  <button class="button" id="sym" onclick="lastremove()">< -</button>
+</div>
+</form>
+  
+  
+  
+</div>
+
+
+
+  <script src="./index.js"></script>
+
+
+
+
+</body>  
+</html>
+  <!--<form action="" id="display">
+     <input type="text" id="show" value="" placeholder="0">  
+     <br>
+     <input type="button" id="sym" class="btn" value="AC" onclick="display.show.value =' ' ">
+     <input type="button" id="sym" class="btn" value="DEL" onclick="display.show.value = display.show.value.toString().slice(0, -1) ">
+     <input type="button" id="sym" class="btn" value="." onclick="display.show.value +='.' ">
+     <input type="button" id="sym" class="btn" value="%" onclick="display.show.value +='%' ">
+
+     <br> 
+     <input type="button" class="btn" value="1" onclick="display.show.value +='1' ">
+     <input type="button" class="btn" value="2" onclick="display.show.value +='2' ">
+     <input type="button" class="btn" value="3" onclick="display.show.value +='3' ">
+     <input type="button" id="sym" class="btn" value="/" onclick="display.show.value +='/' ">
+     <br>
+     <input type="button" class="btn" value="4" onclick="display.show.value +='5' ">
+     <input type="button" class="btn" value="5" onclick="display.show.value +='6' ">
+     <input type="button" class="btn" value="6" onclick="display.show.value +='7' ">
+     <input type="button" id="sym" class="btn" value="*" onclick="display.show.value +='*' ">
+     <br>
+     <input type="button" class="btn" value="7" onclick="display.show.value +='7' ">
+     <input type="button" class="btn" value="8" onclick="display.show.value +='8' ">
+     <input type="button" class="btn" value="9" onclick="display.show.value +='9' ">
+     <input type="button" id="sym" class="btn" value="-" onclick="display.show.value +='-' ">
+     <br>
+     <input type="button" class="btn" value="00" onclick="display.show.value +='00' ">
+     <input type="button" class="btn" value="0" onclick="display.show.value +='0' ">
+     <input type="button" id="equal" class="btn" value="=" onclick="display.show.value = eval(display.show.value) ">
+     <input type="button" id="sym" class="btn" value="+" onclick="display.show.value +='+' ">
+     <br>
+
+  </form>
+  
+</body>  -->
+  
